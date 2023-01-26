@@ -15,7 +15,7 @@ let remainingSkips = 2;
     });
 
 function getJSON() {
-    fetch('https://raw.githubusercontent.com/danevfx/dane.lol/main/games/mapguesser/json/countries.json').then (data => data.json()).then(data => {
+    fetch('https://raw.githubusercontent.com/danevfx/dane.lol/main/Projects/Mapguesser/json/countries.json').then (data => data.json()).then(data => {
     gl_countries.push(data.countries);
     console.log(gl_countries);
 
