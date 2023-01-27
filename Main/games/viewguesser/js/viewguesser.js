@@ -22,7 +22,7 @@ function getJSON() {
             '<p style="color: white;">You will be presented with two videos, one video on the left and a different video on the right (top and bottom if you\'re on mobile). These will be different random videos pulled from YouTube.</p>' +
             '<p style="color: white;">Each video will display the title, the name of the creator that made the video, the videos viewcount & the videos thumbnail in the background. There is also an option to preview each video.</p>' +
             '<p style="color: white;">The view count of the first video will be displayed on the left. The video on the right will have two buttons, one for higher and one for lower. You have to guess if this video has higher or lower views than the video on the left.</p>' +
-            '<img src="assets/instructions/example.gif" style="max-width:450px;">' +
+            '<img src="games/viewguesser/assets/instructions/example.gif" style="max-width:450px;">' +
             '<p style="color: white; margin-top: 10px;">Once you make your selection, the viewcount of the video will then be displayed. If you picked correctly the video will then move to the left and a new video will be populated on the right. If you picked incorrectly, the game will end and you will see a losing screen. The losing screen will change depending on your final score.</p>' +
             '<p style="color: white;"><b>I hope you enjoy!</b></p>',
           showCloseButton: false,
