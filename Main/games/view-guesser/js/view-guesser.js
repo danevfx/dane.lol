@@ -10,7 +10,7 @@ let score = 0;
 
 //Uses fetch to fetch JSON file containing all video data and then pushes this to global array
 function getJSON() {
-    fetch('https://raw.githubusercontent.com/danevfx/dane.lol/main/Projects/Viewguesser/json/videos.json').then (data => data.json()).then(data => {
+    fetch('https://raw.githubusercontent.com/danevfx/dane.lol/main/Projects/View-Guesser/json/videos.json').then (data => data.json()).then(data => {
         //  console.log(data);
          videoData.push(data.videos);
         //  console.log(videoData);
@@ -43,7 +43,7 @@ function getJSON() {
 }
 
 function getEndscreenBackgrounds() {
-  fetch('https://raw.githubusercontent.com/danevfx/dane.lol/main/Projects/Viewguesser/json/endscreen-backgrounds.json').then (data => data.json()).then(data => {
+  fetch('https://raw.githubusercontent.com/danevfx/dane.lol/main/Projects/View-guesser/json/endscreen-backgrounds.json').then (data => data.json()).then(data => {
           
   losingBackgrounds.push(data.losingbackgrounds);
   decentBackgrounds.push(data.decentbackgrounds);
