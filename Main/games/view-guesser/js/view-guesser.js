@@ -358,7 +358,7 @@ randomVideo();
         $(".modal-body").css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("' + randomwinningBackground.backgroundURL + '")')
         $("#losing-comment").html(randomwinningBackground.endComment)
         $("#twitter-button").html("<a href=\"https://twitter.com/intent/tweet?text=I%20just%20scored%20" + score + "%20on%20View Guesser.%20Think%20you%20can%20do%20better?%20https://dane.lol/view-guesser\" id=\"tweet-button\" class=\"button\"><i class=\"fab fa-twitter\"></i> Tweet</a>")
-      } else if(score >= 7) {https://viewgue
+      } else if(score >= 7) {
         var randomdecentBackground = _.sample(decentBackgrounds[0]);
         $(".modal-body").css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("' + randomdecentBackground.backgroundURL + '")')
         $("#losing-comment").html(randomdecentBackground.endComment)
