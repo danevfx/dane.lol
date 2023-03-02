@@ -233,7 +233,7 @@ randomVideo();
               var delayInMilliseconds = 1400; //1 second
 
               setTimeout(function() { 
-                var audio = new Audio('assets/sounds/correct.mp3');
+                var audio = new Audio('assets/sounds/incorrect.mp3');
                 audio.play();
               }, delayInMilliseconds);
 
