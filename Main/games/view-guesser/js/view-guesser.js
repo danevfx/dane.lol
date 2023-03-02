@@ -22,7 +22,7 @@ function getJSON() {
             '<p style="color: white;">You will be presented with two videos, one video on the left and a different video on the right (top and bottom if you\'re on mobile). These will be different random videos pulled from YouTube.</p>' +
             '<p style="color: white;">Each video will display the title, the name of the creator that made the video, the videos viewcount & the videos thumbnail in the background. There is also an option to preview each video.</p>' +
             '<p style="color: white;">The view count of the first video will be displayed on the left. The video on the right will have two buttons, one for higher and one for lower. You have to guess if this video has higher or lower views than the video on the left.</p>' +
-            '<img src="games/view-guesser/assets/instructions/example.gif" style="max-width:450px;">' +
+            '<img src="/games/view-guesser/" style="max-width:450px;">' +
             '<p style="color: white; margin-top: 10px;">Once you make your selection, the viewcount of the video will then be displayed. If you picked correctly the video will then move to the left and a new video will be populated on the right. If you picked incorrectly, the game will end and you will see a losing screen. The losing screen will change depending on your final score.</p>' +
             '<p style="color: white;"><b>I hope you enjoy!</b></p>',
           showCloseButton: false,
@@ -43,7 +43,7 @@ function getJSON() {
 }
 
 function getEndscreenBackgrounds() {
-  fetch('https://raw.githubusercontent.com/danevfx/dane.lol/main/Projects/View-guesser/json/endscreen-backgrounds.json').then (data => data.json()).then(data => {
+  fetch('https://raw.githubusercontent.com/danevfx/dane.lol/main/Projects/View-Guesser/json/endscreen-backgrounds.json').then (data => data.json()).then(data => {
           
   losingBackgrounds.push(data.losingbackgrounds);
   decentBackgrounds.push(data.decentbackgrounds);
@@ -182,7 +182,7 @@ randomVideo();
               var delayInMilliseconds = 1400; //1 second
 
               setTimeout(function() { 
-                var audio = new Audio('assets/sounds/correct.mp3');
+                var audio = new Audio('/games/view-guesser/assets/sounds/correct.mp3');
                 audio.play();
               }, delayInMilliseconds);
 
@@ -233,7 +233,7 @@ randomVideo();
               var delayInMilliseconds = 1400; //1 second
 
               setTimeout(function() { 
-                var audio = new Audio('gassets/sounds/incorrect.mp3');
+                var audio = new Audio('/games/view-guesser/assets/sounds/incorrect.mp3');
                 audio.play();
               }, delayInMilliseconds);
 
@@ -288,7 +288,7 @@ randomVideo();
                var delayInMilliseconds = 1400; //1 second
 
               setTimeout(function() { 
-                var audio = new Audio('games/viewguesser/assets/sounds/correct.mp3');
+                var audio = new Audio('/games/view-guesser/assets/sounds/correct.mp3');
                 audio.play();
               }, delayInMilliseconds);
                
@@ -337,7 +337,7 @@ randomVideo();
               var delayInMilliseconds = 1400; //1 second
 
               setTimeout(function() { 
-                var audio = new Audio('games/viewguesser/assets/sounds/incorrect.mp3');
+                var audio = new Audio('/games/view-guesser/assets/sounds/incorrect.mp3');
                 audio.play();
               }, delayInMilliseconds);
 
@@ -357,17 +357,17 @@ randomVideo();
         var randomwinningBackground = _.sample(winningBackgrounds[0]);
         $(".modal-body").css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("' + randomwinningBackground.backgroundURL + '")')
         $("#losing-comment").html(randomwinningBackground.endComment)
-        $("#twitter-button").html("<a href=\"https://twitter.com/intent/tweet?text=I%20just%20scored%20" + score + "%20on%20View Guesser.%20Think%20you%20can%20do%20better?%20https://dane.lol/view-guesser\" id=\"tweet-button\" class=\"button\"><i class=\"fab fa-twitter\"></i> Tweet</a>")
-      } else if(score >= 7) {
+        $("#twitter-button").html("<a href=\"https://twitter.com/intent/tweet?text=I%20just%20scored%20" + score + "%20on%20ViewGuesser.%20Think%20you%20can%20do%20better?%20https://dane.lol/games/viewguesser\" id=\"tweet-button\" class=\"button\"><i class=\"fab fa-twitter\"></i> Tweet</a>")
+      } else if(score >= 7) {https://viewgue
         var randomdecentBackground = _.sample(decentBackgrounds[0]);
         $(".modal-body").css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("' + randomdecentBackground.backgroundURL + '")')
         $("#losing-comment").html(randomdecentBackground.endComment)
-        $("#twitter-button").html("<a href=\"https://twitter.com/intent/tweet?text=I%20just%20scored%20" + score + "%20on%20View Guesser.%20Think%20you%20can%20do%20better?%20https://dane.lol/view-guesser\" id=\"tweet-button\" class=\"button\"><i class=\"fab fa-twitter\"></i> Tweet</a>")
+        $("#twitter-button").html("<a href=\"https://twitter.com/intent/tweet?text=I%20just%20scored%20" + score + "%20on%20ViewGuesser.%20Think%20you%20can%20do%20better?%20https://dane.lol/games/viewguesser\" id=\"tweet-button\" class=\"button\"><i class=\"fab fa-twitter\"></i> Tweet</a>")
       } else {
         var randomlosingBackground = _.sample(losingBackgrounds[0]);
         $(".modal-body").css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("' + randomlosingBackground.backgroundURL + '")')
         $("#losing-comment").html(randomlosingBackground.endComment)
-        $("#twitter-button").html("<a href=\"https://twitter.com/intent/tweet?text=I%20just%20scored%20" + score + "%20on%20View Guesser.%20Think%20you%20can%20do%20better?%20https://dane.lol/view-guesser\" id=\"tweet-button\" class=\"button\"><i class=\"fab fa-twitter\"></i> Tweet</a>")
+        $("#twitter-button").html("<a href=\"https://twitter.com/intent/tweet?text=I%20just%20scored%20" + score + "%20on%20ViewGuesser.%20Think%20you%20can%20do%20better?%20https://dane.lol/games/viewguesser\" id=\"tweet-button\" class=\"button\"><i class=\"fab fa-twitter\"></i> Tweet</a>")
       }
     }
     
