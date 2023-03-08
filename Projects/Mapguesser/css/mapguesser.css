@@ -47,7 +47,7 @@ body.swal2-height-auto {
 .logo-brand {
     margin-left: 30px;
     margin-top: 20px;
-    background: linear-gradient(to right, red, crimson, pink, purple, springgreen, blue);
+    background: linear-gradient(to right, #2f8ff7, #ff6ce6);;
     background-size: 200% 200%;
     animation: rainbow 2s ease-in-out infinite;
     background-clip: text;
