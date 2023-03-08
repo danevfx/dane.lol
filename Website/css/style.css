@@ -20,7 +20,7 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
   }
 
 .main-logo h1 {
-    background: linear-gradient(to right, #0057b7, #ffd700);
+    background: linear-gradient(to right, #2f8ff7, #ff6ce6);
     background-size: 200% 200%;
     animation: rainbow 1s ease-in-out infinite;
     background-clip: text;
