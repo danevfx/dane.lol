@@ -215,6 +215,16 @@ footer a {
     margin-top: 40px;
 }
 
+.donate-ft-link {
+    font-size: 10px;
+    color:rgba(95, 95, 95, 0.514);
+    cursor: pointer;
+}
+
+.donate-ft-link:hover {
+    color: rgb(255, 100, 100);
+}
+
 footer a:hover {
     color: rgb(255, 100, 100);
 }
