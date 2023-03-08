@@ -196,6 +196,10 @@ footer a {
     color: rgb(0, 0, 0);
 }
 
+footer ul {
+    padding: 0px;
+}
+
 .development-buttons li {
     display:inline;
 }
